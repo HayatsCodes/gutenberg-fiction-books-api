@@ -1,0 +1,24 @@
+{
+  "name": "gutenberg_stem_books-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/HayatsCodes/Gutenberg_STEM_Books-API.git"
+  },
+  "author": "Hayatudeen Abdulrahman (HayatsCodes)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HayatsCodes/Gutenberg_STEM_Books-API/issues"
+  },
+  "homepage": "https://github.com/HayatsCodes/Gutenberg_STEM_Books-API#readme",
+  "dependencies": {
+    "csv-parse": "^5.3.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0"
+  }
+}
