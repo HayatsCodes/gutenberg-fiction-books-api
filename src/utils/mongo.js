@@ -13,5 +13,7 @@ mongoose.connection().on('error', (err) => {
 mongoose.set('strictQuery', false);
 
 async function mongoConnect() {
-    await  mong
+    await  mongoose.connect(MONGO_URL, {
+        
+    })
 }
