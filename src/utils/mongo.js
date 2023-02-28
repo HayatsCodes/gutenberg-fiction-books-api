@@ -12,3 +12,6 @@ mongoose.connection().on('error', (err) => {
 
 mongoose.set('strictQuery', false);
 
+async function mongoConnect() {
+    
+}
