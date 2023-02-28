@@ -19,3 +19,4 @@ async function mongoConnect() {
     });
 }
 
+module.exports = mongoConnect;
