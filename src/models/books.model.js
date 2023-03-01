@@ -43,11 +43,11 @@ function loadBooks() {
     });
 }
 
-
+let trackId = 0;
   
 async function saveBook(book) {
     const BOOK_URL = `http://www.gutenberg.org/ebooks/${book['Text#']}`
-    const orderId = await getNextOrderId();
+    const orderId = tracki
     try {
         await books.updateOne({
             gutenberg_id: book['Text#']
