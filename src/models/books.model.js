@@ -44,7 +44,7 @@ function loadBooks() {
 }
 
 async function getNextOrderId() {
-    const count = await books.();
+    const count = ((await books.find({})).length);
     return count + 1;
   }
   
