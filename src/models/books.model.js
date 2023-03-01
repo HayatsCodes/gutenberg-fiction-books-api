@@ -67,6 +67,10 @@ async function saveBook(book) {
    
 }
 
+async function getAllBooks() {
+    await books.
+}
+
 module.exports = {
     loadBooks,
 }
