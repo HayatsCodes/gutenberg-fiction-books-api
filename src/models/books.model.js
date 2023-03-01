@@ -34,7 +34,7 @@ function loadBooks() {
             reject(err);
         })
         .on('end', () => {
-            console.log(`Found 20000+ fiction books`);
+            console.log(`Found ${} fiction books`);
             resolve();
         });
     });
