@@ -78,11 +78,10 @@ async function saveBook(book) {
 async function getAllBooks(skip = 0, limit = 20) {
     console.log('Books found!')
     return await books
-    .find({}, {'_id': 0, '__v': 0}
+    .find({}, {'_id': 0, '__v': 0})
     .sort({ orderId: 1})
     .skip(skip)
     .limit(limit)
-    )
 }
 
 module.exports = {
