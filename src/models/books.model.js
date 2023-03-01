@@ -85,7 +85,9 @@ async function getAllBooks(skip, limit) {
     .limit(limit)
 }
 
-async function getBookById()
+async function getBookById(id) {
+    
+}
 
 module.exports = {
     loadBooks,
