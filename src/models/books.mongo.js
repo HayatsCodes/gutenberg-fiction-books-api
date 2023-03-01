@@ -6,7 +6,11 @@ const bookSchema = new mongoose.Schema({
     authors:  String,
     subjects:  String,
     year: String,
-    link: {Object},
+    link: {
+        html: String,
+        epub: String,
+        kindle: String,
+    },
 });
 
 module.exports = mongoose.model('Book', bookSchema);
