@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const csv = require('csv-parse');
 const books = require('./books.mongo');
+const { count } = require('console');
 
 function isFiction(book) {
     const regex = /^(?!.*(religion|christianity|islam|quran|bible|judaism|buddhism|hinduism)).*fiction.*$/i;
@@ -43,13 +44,13 @@ function loadBooks() {
 }
 async function saveBook(book) {
     const BOOK_URL = `http://www.gutenberg.org/ebooks/${book['Text#']}`
-    count = 
+    let id = 0;
     try {
         await books.updateOne({
             gutenberg_id: book['Text#']
         }, {
             gutenberg_id: book['Text#'],
-            order_id: 
+            order_id: count++,
             title: book.Title,
             authors: book.Authors,
             subjects: book.Subjects,
