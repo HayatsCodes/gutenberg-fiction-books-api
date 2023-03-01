@@ -5,7 +5,6 @@ const mongoConnect = require('./src/utils/mongo');
 
 const server = http.createServer(app);
 
-function startServer() {}
 mongoConnect();
 
 server.listen(5000, () => {
