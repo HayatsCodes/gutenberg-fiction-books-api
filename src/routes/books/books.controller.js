@@ -1,4 +1,4 @@
-const { getAllBooks } = require('../../models/books.model');
+const { getAllBooks, getBookById, getBookByOrderId } = require('../../models/books.model');
 
 async function httpGetAllBooks(req, res) {
     console.log('getting books...')
