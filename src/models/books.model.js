@@ -64,7 +64,7 @@ async function saveBook(book) {
             upsert: true,
         });
     } catch(err) {
-        console.error(`err`)
+        console.error(`Could not save book ${err}`);
     }
    
 }
