@@ -35,7 +35,7 @@ function loadBooks() {
         })
         .on('end', async () => {
             const countBooksFound = (await getAllBooks()).length
-            console.log(`Found ${countBooksFound} fiction books`);
+            console.log(`Found ${fictionBooks.length} fiction books`);
             resolve();
         });
     });
@@ -69,7 +69,7 @@ async function saveBook(book) {
 }
 
 async function getAllBooks() {
-    return await books.find({}, {
+    await books.find({}, {
         '_id': 0,
         '__v': 0,
     });
