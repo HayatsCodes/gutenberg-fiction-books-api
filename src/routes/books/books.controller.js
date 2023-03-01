@@ -25,7 +25,7 @@ async function httpGetBook(req, res) {
         if (!book) {
             return res.status(400).json('Gutenberg book id not found');
         }
-        
+        return res.status(200).json(book);
     }
 }
 
