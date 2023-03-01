@@ -11,7 +11,10 @@ async function httpGetAllBooks(req, res) {
 }
 
 async function httpGetBook(id) {
-    
+
 }
 
-module.exports = httpGetAllBooks;
+module.exports = {
+    httpGetAllBooks,
+    httpGetBook,
+}
