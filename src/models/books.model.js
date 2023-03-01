@@ -33,8 +33,8 @@ function loadBooks() {
             console.log(err);
             reject(err);
         })
-        .on('end', () => {
-            const 
+        .on('end', async () => {
+            const countBooksFound = (await getAllBooks()).length
             console.log(`Found ${fictionBooks.length} fiction books`);
             resolve();
         });
