@@ -75,7 +75,7 @@ async function saveBook(book) {
    
 }
 
-async function getAllBooks() {
+async function getAllBooks(skip) {
     console.log('Books found!')
     return await books.find({}, {
         '_id': 0,
