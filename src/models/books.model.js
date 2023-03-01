@@ -70,7 +70,7 @@ async function saveBook(book) {
 }
 
 async function getAllBooks() {
-    await books.find({}, {
+    return await books.find({}, {
         '_id': 0,
         '__v': 0
     });
@@ -78,4 +78,5 @@ async function getAllBooks() {
 
 module.exports = {
     loadBooks,
+    getAllBooks,
 }
