@@ -17,9 +17,14 @@ async function httpGetBook(req, res) {
     if (req.query.order_id) {
         const book = await getBookByOrderId(id);
         if (!book) {
-            return res.status(400).json('Book not found')
+            return res.status(400).json('Book not found');
         }
         return res.status(200).json(book);
+    } else {
+        const book = await getBookById(id);
+        if (!book) {
+            return res.status(400).json('Book not found');
+        }
     }
 }
 
