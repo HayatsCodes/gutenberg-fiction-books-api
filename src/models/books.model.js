@@ -36,7 +36,7 @@ function loadBooks() {
             reject(err);
         })
         .on('end', () => {
-            console.log(`Found ${} fiction books`);
+            console.log(`Found ${countBooks} fiction books`);
             resolve();
         });
     });
