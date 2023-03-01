@@ -10,4 +10,8 @@ async function httpGetAllBooks(req, res) {
     return res.status(200).json(books);
 }
 
+async function httpGetBook(id) {
+    
+}
+
 module.exports = httpGetAllBooks;
