@@ -47,16 +47,16 @@ async function getNextOrderId() {
     const count = await books.countDocuments();
     return count + 1;
   }
-
+  
 async function saveBook(book) {
     const BOOK_URL = `http://www.gutenberg.org/ebooks/${book['Text#']}`
-    let id = 0;
+    let orderId = await getNextOrderId();
     try {
         await books.updateOne({
             gutenberg_id: book['Text#']
         }, {
             gutenberg_id: book['Text#'],
-            order_id: await ,
+            order_id: id,
             title: book.Title,
             authors: book.Authors,
             subjects: book.Subjects,
