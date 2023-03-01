@@ -46,7 +46,8 @@ async function saveBook(book) {
     await books.updateOne({
         id: book['Text#']
     }, {
-        
+        id: book['Text#'],
+        tit
     })
 }
 loadBooks();
