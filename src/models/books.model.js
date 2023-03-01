@@ -89,6 +89,10 @@ async function getBookById(id) {
     return await books.find({gutenberg_id: id});
 }
 
+async function getBookByOrderId(id) {
+    return a
+}
+
 module.exports = {
     loadBooks,
     getAllBooks,
