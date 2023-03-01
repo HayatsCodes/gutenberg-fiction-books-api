@@ -63,4 +63,3 @@ async function saveBook(book) {
         upsert: true,
     })
 }
-loadBooks();
