@@ -47,7 +47,8 @@ async function saveBook(book) {
         id: book['Text#']
     }, {
         id: book['Text#'],
-        tit
+        title: book.Title,
+        authors: book.Authors
     })
 }
 loadBooks();
