@@ -43,7 +43,7 @@ function loadBooks() {
     });
 }
 async function saveBook(book) {
-    const BOOK_URL = ''
+    const BOOK_URL = 'http://www.gutenberg.org/ebooks'
     await books.updateOne({
         id: book['Text#']
     }, {
