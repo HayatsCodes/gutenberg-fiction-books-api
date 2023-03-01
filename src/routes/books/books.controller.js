@@ -11,7 +11,7 @@ async function httpGetAllBooks(req, res) {
 }
 
 async function httpGetBook(req, res) {
-    co
+    const id = req.quer
 }
 
 module.exports = {
