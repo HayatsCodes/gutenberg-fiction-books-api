@@ -43,6 +43,7 @@ function loadBooks() {
     });
 }
 async function saveBook(book) {
+    const BOOK_URL = ''
     await books.updateOne({
         id: book['Text#']
     }, {
