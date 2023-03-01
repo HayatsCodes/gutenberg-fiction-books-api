@@ -19,6 +19,7 @@ function isFiction(book) {
   
 
 function loadBooks() {
+    const countBooks = 0;
     return new Promise((resolve, reject) => {
         fs.createReadStream(path.join(__dirname, '..', 'data', 'book_catalog.csv'))
         .pipe(csv.parse({
@@ -27,6 +28,7 @@ function loadBooks() {
         .on('data', (data) => {
             if (isFiction(data) && isEnglish(data)) {
                 saveBook(data);
+                countBooks++;
             }
         })
         .on('error', (err) => {
