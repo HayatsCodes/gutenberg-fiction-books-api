@@ -43,7 +43,7 @@ function loadBooks() {
     });
 }
 async function saveBook(book) {
-    const BOOK_URL = 'http://www.gutenberg.org/ebooks'
+    const BOOK_URL = `http://www.gutenberg.org/ebooks`
     await books.updateOne({
         id: book['Text#']
     }, {
@@ -54,7 +54,7 @@ async function saveBook(book) {
         year: book.Issued,
         link: {
             html: `${BOOK_URL}/${book['Text#']}.html.images`,
-            txt:
+            txt: ``
         },
     })
 }
