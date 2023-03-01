@@ -73,7 +73,7 @@ async function getAllBooks() {
     await books.find({}, {
         '_id': 0,
         '__v': 0
-    })
+    });
 }
 
 module.exports = {
