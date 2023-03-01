@@ -86,7 +86,7 @@ async function getAllBooks(skip, limit) {
 }
 
 async function getBookById(id) {
-    await books.find({gutenberg_id: id});
+    return await books.find({gutenberg_id: id});
 }
 
 module.exports = {
