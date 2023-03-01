@@ -5,8 +5,9 @@ async function httpGetAllBooks(req, res) {
     const page = Number(req.query.page) || 1;
     const limit = Number(req.query.limit) || 20;
     const skip = (page - 1) * limit;
-    
-    return res.status(200).json(await getAllBooks());
+
+    const books = await getAllBooks(skip, limit);
+    return res.status(200).json(books);
 }
 
 module.exports = httpGetAllBooks;
