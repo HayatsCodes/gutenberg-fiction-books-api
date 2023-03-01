@@ -44,23 +44,27 @@ function loadBooks() {
 }
 async function saveBook(book) {
     const BOOK_URL = `http://www.gutenberg.org/ebooks/${book['Text#']}`
-    
-    await books.updateOne({
-        id: book['Text#']
-    }, {
-        id: book['Text#'],
-        title: book.Title,
-        authors: book.Authors,
-        subjects: book.Subjects,
-        year: book.Issued,
-        link: {
-            html: `${BOOK_URL}.html.images`,
-            txt: `${BOOK_URL}.txt.utf-8`,
-            epub: `${BOOK_URL}.epub.noimages`,
-            epub3: `${BOOK_URL}.epub3.images`,
-            kindle: `${BOOK_URL}.kf8.images`
-        }
-    }, {
-        upsert: true,
-    })
+    try {
+        await books.updateOne({
+            id: book['Text#']
+        }, {
+            id: book['Text#'],
+            title: book.Title,
+            authors: book.Authors,
+            subjects: book.Subjects,
+            year: book.Issued,
+            link: {
+                html: `${BOOK_URL}.html.images`,
+                txt: `${BOOK_URL}.txt.utf-8`,
+                epub: `${BOOK_URL}.epub.noimages`,
+                epub3: `${BOOK_URL}.epub3.images`,
+                kindle: `${BOOK_URL}.kf8.images`
+            }
+        }, {
+            upsert: true,
+        });
+    } catch(err) {
+        console.error(`err`)
+    }
+   
 }
