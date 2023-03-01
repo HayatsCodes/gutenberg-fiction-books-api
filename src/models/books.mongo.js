@@ -8,6 +8,7 @@ const bookSchema = new mongoose.Schema({
     year: String,
     link: {
         html: String,
+        html5: String,
         txt: String,
         epub: String,
         epub3: String,
