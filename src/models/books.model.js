@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const csv = require('csv-parse');
-const books = require('')
+const books = require('./books.mongo');
 
 function isFiction(book) {
     const regex = /^(?!.*(religion|christianity|islam|quran|bible|judaism|buddhism|hinduism)).*fiction.*$/i;
@@ -28,7 +28,9 @@ function loadBooks() {
         }))
         .on('data', (data) => {
             if (isFiction(data) && isEnglish(data)) {
-                fictionBooks.push(data);
+                books.updateOne({
+                    
+                })
             }
         })
         .on('error', (err) => {
