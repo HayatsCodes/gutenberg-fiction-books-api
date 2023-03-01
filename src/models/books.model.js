@@ -70,3 +70,6 @@ async function saveBook(book) {
    
 }
 
+module.exports = {
+    loadBooks,
+}
