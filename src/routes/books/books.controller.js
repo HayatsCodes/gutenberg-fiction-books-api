@@ -4,6 +4,8 @@ async function httpGetAllBooks(req, res) {
     console.log('getting books...')
     const page = Number(req.query.page) || 1;
     const limit = Number(req.query.limit) || 20;
+    const skip = (page - 1) * limit;
+    
     return res.status(200).json(await getAllBooks());
 }
 
