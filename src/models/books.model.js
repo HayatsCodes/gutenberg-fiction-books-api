@@ -47,13 +47,13 @@ let trackId = 0;
   
 async function saveBook(book) {
     const BOOK_URL = `http://www.gutenberg.org/ebooks/${book['Text#']}`
-    const orderId = tracki
+    trackId++
     try {
         await books.updateOne({
             gutenberg_id: book['Text#']
         }, {
             gutenberg_id: book['Text#'],
-            order_id:  orderId,
+            order_id:  trackId,
             title: book.Title,
             authors: book.Authors,
             subjects: book.Subjects,
