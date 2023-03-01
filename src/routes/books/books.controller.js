@@ -11,7 +11,11 @@ async function httpGetAllBooks(req, res) {
 }
 
 async function httpGetBook(req, res) {
-    const id = req.quer
+    const id = req.params.id
+
+    if (req.query.order_id) {
+        const book = await getBookByOrderId
+    }
 }
 
 module.exports = {
