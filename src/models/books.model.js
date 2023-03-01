@@ -47,7 +47,8 @@ async function saveBook(book) {
         await books.updateOne({
             id: book['Text#']
         }, {
-            id: book['Text#'],
+            gutenberg_id: book['Text#'],
+            
             title: book.Title,
             authors: book.Authors,
             subjects: book.Subjects,
