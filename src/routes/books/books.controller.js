@@ -12,9 +12,13 @@ async function httpGetAllBooks(req, res) {
 
 async function httpGetBook(req, res) {
     const id = req.params.id
-
+    
+    const book = await getBookByOrderId(id);
+    if(!book) {
+        return res.status(400)
+    }
     if (req.query.order_id) {
-        const book = await getBookByOrderId
+        
     }
 }
 
