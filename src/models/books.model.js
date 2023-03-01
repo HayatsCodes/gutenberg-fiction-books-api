@@ -70,6 +70,7 @@ async function saveBook(book) {
 }
 
 async function getAllBooks() {
+    console.log
     return await books.find({}, {
         '_id': 0,
         '__v': 0
