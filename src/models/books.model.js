@@ -52,7 +52,9 @@ async function saveBook(book) {
         authors: book.Authors,
         subjects: book.Subjects,
         year: book.Issued,
-        link: {},
+        link: {
+            html:
+        },
     })
 }
 loadBooks();
