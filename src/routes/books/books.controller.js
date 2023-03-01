@@ -15,10 +15,10 @@ async function httpGetBook(req, res) {
     
     const book = await getBookByOrderId(id);
     if(!book) {
-        return res.status(400)
+        return res.status(400).json('Book not found')
     }
     if (req.query.order_id) {
-        
+        return res.json(book)
     }
 }
 
