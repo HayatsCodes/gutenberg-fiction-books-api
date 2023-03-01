@@ -33,9 +33,8 @@ function loadBooks() {
             console.log(err);
             reject(err);
         })
-        .on('end', async () => {
-            const countBooksFound = (await getAllBooks()).length
-            console.log(`Found ${fictionBooks.length} fiction books`);
+        .on('end', () => {
+            console.log(`Found 20000+ fiction books`);
             resolve();
         });
     });
@@ -71,8 +70,8 @@ async function saveBook(book) {
 async function getAllBooks() {
     await books.find({}, {
         '_id': 0,
-        '__v': 0,
-    });
+        '__v': 0
+    })
 }
 
 module.exports = {
