@@ -28,7 +28,7 @@ function loadBooks() {
         }))
         .on('data', (data) => {
             if (isFiction(data) && isEnglish(data)) {
-                fictionBooks.push(data);
+                saveBook(data);
             }
         })
         .on('error', (err) => {
