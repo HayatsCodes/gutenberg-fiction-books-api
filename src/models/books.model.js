@@ -54,7 +54,8 @@ async function saveBook(book) {
         year: book.Issued,
         link: {
             html: `${BOOK_URL}.html.images`,
-            txt: `${BOOK_URL}.txt.utf-8`
+            txt: `${BOOK_URL}.txt.utf-8`,
+            epub: `${BOOK_URL}.epub.noimages`
         },
     })
 }
