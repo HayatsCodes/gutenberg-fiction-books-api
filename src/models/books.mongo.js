@@ -10,7 +10,7 @@ const bookSchema = new mongoose.Schema({
         html: String,
         txt: String,
         epub: String,
-        epub3
+        epub3: String,
         kindle: String,
     },
 });
