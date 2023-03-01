@@ -37,14 +37,14 @@ function loadBooks() {
         })
         .on('end', () => {
             console.log(`Found ${fictionBooks.length} fiction books`);
-            con
+            console.log(fictionBooks);
             resolve();
         });
     });
 }
-async function saveBook(book) {
-    await books.updateOne({
-        id: book.data
-    })
-}
+// async function saveBook(book) {
+//     await books.updateOne({
+//         id: book.data
+//     })
+// }
 loadBooks();
