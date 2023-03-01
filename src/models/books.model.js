@@ -43,10 +43,7 @@ function loadBooks() {
     });
 }
 
-async function getNextOrderId() {
-    const count = ((await books.find({})).length);
-    return count + 1;
-  }
+
   
 async function saveBook(book) {
     const BOOK_URL = `http://www.gutenberg.org/ebooks/${book['Text#']}`
