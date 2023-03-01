@@ -53,7 +53,8 @@ async function saveBook(book) {
         subjects: book.Subjects,
         year: book.Issued,
         link: {
-            html: `${BOOK_URL}/${book.}`
+            html: `${BOOK_URL}/${book['Text#']}.html.images`,
+            txt:
         },
     })
 }
