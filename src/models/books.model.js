@@ -59,6 +59,8 @@ async function saveBook(book) {
             epub3: `${BOOK_URL}.epub3.images`,
             kindle: `${BOOK_URL}.kf8.images`
         }
+    }, {
+        upsert: true,
     })
 }
 loadBooks();
