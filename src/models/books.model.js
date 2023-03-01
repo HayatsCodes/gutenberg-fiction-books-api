@@ -79,7 +79,7 @@ async function getAllBooks(skip, limit) {
     console.log('Books found!')
     return await books
     .find({}, {'_id': 0, '__v': 0})
-    .sort({ orderId: 1})
+    .sort({ order: 1})
     .skip(skip)
     .limit(limit)
 }
