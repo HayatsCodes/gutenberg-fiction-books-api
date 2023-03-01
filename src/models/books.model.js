@@ -90,10 +90,12 @@ async function getBookById(id) {
 }
 
 async function getBookByOrderId(id) {
-    return a
+    return await books.find({order_id: id});
 }
 
 module.exports = {
     loadBooks,
     getAllBooks,
+    getBookById,
+    getBookByOrderId,
 }
