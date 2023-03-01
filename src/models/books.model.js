@@ -86,7 +86,7 @@ async function getAllBooks(skip, limit) {
 }
 
 async function getBookById(id) {
-    
+    await 
 }
 
 module.exports = {
