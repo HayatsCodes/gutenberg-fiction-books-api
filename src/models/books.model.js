@@ -47,7 +47,7 @@ async function getNextOrderId() {
     const count = await books.countDocuments();
     return count + 1;
   }
-  
+
 async function saveBook(book) {
     const BOOK_URL = `http://www.gutenberg.org/ebooks/${book['Text#']}`
     let id = 0;
@@ -56,7 +56,7 @@ async function saveBook(book) {
             gutenberg_id: book['Text#']
         }, {
             gutenberg_id: book['Text#'],
-            order_id: count++,
+            order_id: await ,
             title: book.Title,
             authors: book.Authors,
             subjects: book.Subjects,
