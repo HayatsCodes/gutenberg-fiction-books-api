@@ -58,7 +58,7 @@ async function saveBook(book) {
             epub: `${BOOK_URL}.epub.noimages`,
             epub3: `${BOOK_URL}.epub3.images`,
             kindle: `${BOOK_URL}.kf8.images`
-        },
+        }
     })
 }
 loadBooks();
