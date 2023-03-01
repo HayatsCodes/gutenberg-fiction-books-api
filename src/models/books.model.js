@@ -37,7 +37,6 @@ function loadBooks() {
         })
         .on('end', () => {
             console.log(`Found ${fictionBooks.length} fiction books`);
-            console.log(fictionBooks);
             resolve();
         });
     });
