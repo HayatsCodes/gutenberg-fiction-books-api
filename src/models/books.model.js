@@ -16,8 +16,6 @@ function isFiction(book) {
     }
 }
   
-
-  const fictionBooks = [];
   
 
 function loadBooks() {
