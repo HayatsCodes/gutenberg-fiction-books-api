@@ -50,13 +50,13 @@ async function getNextOrderId() {
   
 async function saveBook(book) {
     const BOOK_URL = `http://www.gutenberg.org/ebooks/${book['Text#']}`
-    let orderId = await getNextOrderId();
+    const orderId = await getNextOrderId();
     try {
         await books.updateOne({
             gutenberg_id: book['Text#']
         }, {
             gutenberg_id: book['Text#'],
-            order_id: id,
+            order_id:  orderId,
             title: book.Title,
             authors: book.Authors,
             subjects: book.Subjects,
