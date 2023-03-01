@@ -68,7 +68,9 @@ async function saveBook(book) {
 }
 
 async function getAllBooks() {
-    await books.
+    await books.find({}, {
+        '_id': 0
+    })
 }
 
 module.exports = {
