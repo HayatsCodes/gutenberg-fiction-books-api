@@ -42,9 +42,9 @@ function loadBooks() {
         });
     });
 }
-// async function saveBook(book) {
-//     await books.updateOne({
-//         id: book.data
-//     })
-// }
+async function saveBook(book) {
+    await books.updateOne({
+        id: book['Text#']
+    })
+}
 loadBooks();
