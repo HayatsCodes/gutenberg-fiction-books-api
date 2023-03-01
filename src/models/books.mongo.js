@@ -7,7 +7,7 @@ const bookSchema = new mongoose.Schema({
     authors:  String,
     subjects:  String,
     year: String,
-    link: {
+    download_link: {
         html: String,
         html5: String,
         txt: String,
