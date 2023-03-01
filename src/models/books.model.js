@@ -55,7 +55,9 @@ async function saveBook(book) {
         link: {
             html: `${BOOK_URL}.html.images`,
             txt: `${BOOK_URL}.txt.utf-8`,
-            epub: `${BOOK_URL}.epub.noimages`
+            epub: `${BOOK_URL}.epub.noimages`,
+            epub3: `${BOOK_URL}.epub3.images`,
+            kindle: `${BOOK_URL}.kf8.images`
         },
     })
 }
