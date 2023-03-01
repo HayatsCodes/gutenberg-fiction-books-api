@@ -58,7 +58,7 @@ async function saveBook(book) {
             authors: book.Authors,
             subjects: book.Subjects,
             year: book.Issued,
-            book_url =
+            book_url: BOOK_URL,
             download_link: {
                 html:`${BOOK_URL}.html.noimages`,
                 html5: `${BOOK_URL}.html.images`,
