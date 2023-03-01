@@ -43,7 +43,7 @@ function loadBooks() {
 async function saveBook(book) {
     const BOOK_URL = `http://www.gutenberg.org/ebooks/${book['Text#']}`
     try {
-        await books.updateOne({
+        await books.findupdateOne({
             id: book['Text#']
         }, {
             id: book['Text#'],
