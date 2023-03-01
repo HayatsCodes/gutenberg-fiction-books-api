@@ -18,7 +18,7 @@ async function httpGetBook(req, res) {
         return res.status(400).json('Book not found')
     }
     if (req.query.order_id) {
-        return res.json(book)
+        return res.status(200).json(book);
     }
 }
 
