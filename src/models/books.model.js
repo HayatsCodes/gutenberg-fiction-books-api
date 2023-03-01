@@ -43,12 +43,13 @@ function loadBooks() {
 }
 async function saveBook(book) {
     const BOOK_URL = `http://www.gutenberg.org/ebooks/${book['Text#']}`
+    count = 
     try {
         await books.updateOne({
-            id: book['Text#']
+            gutenberg_id: book['Text#']
         }, {
             gutenberg_id: book['Text#'],
-            
+            order_id: 
             title: book.Title,
             authors: book.Authors,
             subjects: book.Subjects,
