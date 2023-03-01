@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const MONGO_URL = 'mongodb+srv://gutenberg-api:<password>@gutenberg-fiction-books.ennxkis.mongodb.net/?retryWrites=true&w=majority';
+const MONGO_URL = 'mongodb+srv://gutenberg-api:6qOnacZOtlJCbIrt@gutenberg-fiction-books.ennxkis.mongodb.net/?retryWrites=true&w=majority';
 
 mongoose.connection.once('open', () => {
     console,log('MongoDB connection ready');
