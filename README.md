@@ -27,9 +27,9 @@ Returns the books in JSON format
 
 ##### Sample Response
 
+```
 <details>
   <summary>Click to expand</summary>
-```
 [
     {
         "download_link": {
@@ -372,8 +372,8 @@ Returns the books in JSON format
         "year": "1993-02-01"
     }
 ]
-```
 </details>
+```
 
 #### Endpoint 2
 
