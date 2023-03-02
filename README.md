@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="custom.css">
 # Gutenberg Fiction Books API
 
 ## Introduction
@@ -26,7 +27,7 @@ Due to pagination, this is the first 20 books, ordered by the order_id field.
 Returns the books in JSON format
 
 ##### Sample Response
-<div style="height: 3000px; overflow-y: scroll;">
+<div  class="scrollable-code">
   <pre>
   <code>
 [
