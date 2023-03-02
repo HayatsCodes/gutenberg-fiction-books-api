@@ -14,7 +14,9 @@ async function httpGetAllBooks(req, res) {
 
     const { order_id } = req.query;
 
+
     if (order_id) {
+        console.log('Getting book by orderId');
         const book = await getBookByOrderId(order_id);
         if (book) {
             return res.status(200).json(book);
@@ -23,8 +25,8 @@ async function httpGetAllBooks(req, res) {
         }
     }
 
-
     console.log('getting books...')
+
     const page = Number(req.query.page) || 1;
     const limit = Number(req.query.limit) || 20;
     const skip = (page - 1) * limit;
