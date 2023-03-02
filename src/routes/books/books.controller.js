@@ -11,9 +11,8 @@ async function httpGetAllBooks(req, res) {
 }
 
 async function httpGetBook(req, res) {
-    const id = req.params.id
-
-    
+    const id = req.params.id;
+    const byOrderId = req.query.order_id;
 }
 
 module.exports = {
