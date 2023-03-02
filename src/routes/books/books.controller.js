@@ -6,7 +6,7 @@ async function httpGetAllBooks(req, res) {
 
     const queryParams = object.keys(req.query);
 
-    const isValidParams = queryParams.every((param) => valisParams.includes(param))
+    const isValidParams = queryParams.every((param) => vali.includes(param))
     console.log('getting books...')
     const page = Number(req.query.page) || 1;
     const limit = Number(req.query.limit) || 20;
