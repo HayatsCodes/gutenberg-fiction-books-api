@@ -86,6 +86,7 @@ async function getAllBooks(skip, limit) {
 }
 
 async function getBookById(id) {
+    console.log()
     return await books.find({gutenberg_id: id}, {'_id': 0, '__v': 0});
 }
 
