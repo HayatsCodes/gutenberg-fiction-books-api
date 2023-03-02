@@ -87,7 +87,7 @@ Returns the books in JSON format
     </code>
   </pre>
 </div>
-
+Note 20 books would be returned in the response while 3 is shown here.
 
 #### Endpoint 2
 
