@@ -36,10 +36,12 @@ async function httpGetAllBooks(req, res) {
 }
 
 async function httpGetBookById(req, res) {
+    console.log('Getting book by orderId');
     const book = await getBookById();
     if (book) {
-        return res.status(200).json()
+        return res.status(200).json(book);
     }
+    return res.status(404).json('Gutenberg book id not found');
 }
 
 module.exports = {
