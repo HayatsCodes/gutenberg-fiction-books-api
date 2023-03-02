@@ -36,7 +36,8 @@ async function httpGetAllBooks(req, res) {
 }
 
 async function httpGetBookById(req, res) {
-    return res.status(200).json(await getBookById());
+    const book = await getBookById() 
+    return res.status(200).json();
 }
 
 module.exports = {
