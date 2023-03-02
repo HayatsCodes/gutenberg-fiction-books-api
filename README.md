@@ -27,8 +27,9 @@ Returns the books in JSON format
 
 ##### Sample Response
 
-```css{style="height: 100px; overflow-y: scroll;"}
-    [
+<details>
+  <summary>Click to expand</summary>
+[
     {
         "download_link": {
             "html": "http://www.gutenberg.org/ebooks/11.html.noimages",
@@ -370,7 +371,7 @@ Returns the books in JSON format
         "year": "1993-02-01"
     }
 ]
-```
+</details>
 
 #### Endpoint 2
 
