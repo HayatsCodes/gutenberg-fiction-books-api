@@ -27,8 +27,7 @@ Returns the books in JSON format
 
 ##### Sample Response
 
-<div style="overflow: scroll; height: 50px; width: 70vw;">
-  <pre><code>
+```css{style="height: 100px; overflow-y: scroll;"}
     [
     {
         "download_link": {
@@ -371,8 +370,7 @@ Returns the books in JSON format
         "year": "1993-02-01"
     }
 ]
-  </code></pre>
-</div>
+```
 
 #### Endpoint 2
 
