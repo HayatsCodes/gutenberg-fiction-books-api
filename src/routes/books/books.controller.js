@@ -38,7 +38,7 @@ async function httpGetAllBooks(req, res) {
 async function httpGetBookById(req, res) {
     console.log('Getting book by gutenberg id');
 
-    const id = (req.params.id.split(':')[1]).toString;
+    const id = (req.params.id.split(':')[1]).toString();
     
     const book = await getBookById(id);
     if (book) {
