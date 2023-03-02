@@ -9,8 +9,10 @@ async function httpGetAllBooks(req, res) {
     const isValidParams = queryParams.every((param) => validParams.includes(param));
 
     if (!isValidParams) {
-        return res.status(400).
+        return res.status(400).json('Invalid query parameters');
     }
+
+    
     console.log('getting books...')
     const page = Number(req.query.page) || 1;
     const limit = Number(req.query.limit) || 20;
