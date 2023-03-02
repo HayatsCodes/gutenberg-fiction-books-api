@@ -1,0 +1,4 @@
+.scrollable-code {
+  height: 100px;
+  overflow-y: scroll;
+}
