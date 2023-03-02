@@ -10,7 +10,7 @@ async function httpGetAllBooks(req, res) {
     return res.status(200).json(books);
 }
 
-async function httpGetBook(req, res) {
+async function httpGetBookById(req, res) {
     return res.status(200).json(await getBookById());
 }
 
