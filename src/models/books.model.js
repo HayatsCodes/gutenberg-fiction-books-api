@@ -97,5 +97,4 @@ module.exports = {
     loadBooks,
     getAllBooks,
     getBookById,
-    getBookByOrderId,
 }
