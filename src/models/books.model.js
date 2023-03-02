@@ -85,7 +85,8 @@ async function getAllBooks(skip, limit) {
     .limit(limit)
 }
 
-async function getBookById(id, ) {
+async function getBookById(id, byOrderId) {
+    if (by)
     return await books.find({gutenberg_id: id}, {'_id': 0, '__v': 0});
 }
 
