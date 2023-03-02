@@ -1,4 +1,6 @@
-<link rel="stylesheet" type="text/css" href="custom.css">
+<head>
+  <link rel="stylesheet" type="text/css" href="custom.css">
+</head>
 # Gutenberg Fiction Books API
 
 ## Introduction
