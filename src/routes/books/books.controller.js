@@ -11,7 +11,7 @@ async function httpGetAllBooks(req, res) {
 }
 
 async function httpGetBook(req, res) {
-    
+    return res.status(200).json(await getBookById);
 }
 
 module.exports = {
