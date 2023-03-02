@@ -17,7 +17,9 @@ async function httpGetAllBooks(req, res) {
     if (order_id) {
         const book = await getBookByOrderId(order_id);
         if (book) {
-            return res.status.json(book);
+            return res.status(200).json(book);
+        } else {
+            return res.status(404).json('Book not found');
         }
     }
 
