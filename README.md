@@ -371,9 +371,8 @@ Returns the books in JSON format
         "year": "1993-02-01"
     }
 ]
-```
 </div>
-
+```
 
 #### Endpoint 2
 
