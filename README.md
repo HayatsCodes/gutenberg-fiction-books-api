@@ -28,7 +28,7 @@ Returns the books in JSON format
 ##### Sample Response
 
 <div style="height: 200px; overflow-y: scroll;">
-    ``` 
+``` 
 [
     {
         "download_link": {
