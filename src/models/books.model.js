@@ -86,16 +86,16 @@ async function getAllBooks(skip, limit) {
 }
 
 async function getBookById(id, byOrderId) {
-    if (byOrderId) {
-        console.log('BY ORDER ID');
-        return await books.find({order_id: +id}, {'_id': 0, '__v': 0});
-    }
     return await books.find({gutenberg_id: id}, {'_id': 0, '__v': 0});
 }
 
+async function getBookByOrderId(id) {
+    return await books.find({order_id: id}, {'_id': 0, '__v': 0});
+}
 
 module.exports = {
     loadBooks,
     getAllBooks,
     getBookById,
+    getBookByOrderId,
 }
