@@ -12,7 +12,11 @@ async function httpGetAllBooks(req, res) {
         return res.status(400).json('Invalid query parameters');
     }
 
-    const { order_id } = req.query
+    const { order_id } = req.query;
+
+    if (order_id) {
+        const book = await
+    }
 
 
     console.log('getting books...')
