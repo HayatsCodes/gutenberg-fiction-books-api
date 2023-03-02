@@ -27,7 +27,7 @@ Returns the books in JSON format
 
 ##### Sample Response
 
-<div style="overflow-y: scroll; height: 100px;">
+<div style="overflow: scroll; height: 50px; width: 70vw;">
   <pre><code>
     [
     {
