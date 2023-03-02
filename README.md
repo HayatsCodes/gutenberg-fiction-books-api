@@ -90,8 +90,40 @@ Returns the books in JSON format
 Note 20 books would be returned in the response while 3 is shown here.
 
 #### Endpoint 2
+`/books/:id`
+Gets a particular book by its id as assigned on the gutenberg's website
 
+##### Request
+`GET /books/:id`
 
+##### Sample Request
+`GET https://gutenberg-fiction-books-api.cyclic.app/books/:1345`
+
+##### Response
+Return the book in JSON format
+
+##### Sample Response
+```
+[
+    {
+        "download_link": {
+            "html": "http://www.gutenberg.org/ebooks/1345.html.noimages",
+            "html5": "http://www.gutenberg.org/ebooks/1345.html.images",
+            "txt": "http://www.gutenberg.org/ebooks/1345.txt.utf-8",
+            "epub": "http://www.gutenberg.org/ebooks/1345.epub.noimages",
+            "epub3": "http://www.gutenberg.org/ebooks/1345.epub3.images",
+            "kindle": "http://www.gutenberg.org/ebooks/1345.kf8.images"
+        },
+        "gutenberg_id": "1345",
+        "authors": "Balzac, Honoré de, 1799-1850; Wormeley, Katharine Prescott, 1830-1908 [Translator]",
+        "book_url": "http://www.gutenberg.org/ebooks/1345",
+        "order_id": 607,
+        "subjects": "French fiction -- Translations into English",
+        "title": "The Vicar of Tours",
+        "year": "2005-08-10"
+    }
+]
+```
 
 ## AUTHOR
 - [Hayatudeen Abdulrahman](https://github.com/HayatsCodes) - Passionate backend developer | Building meaningful solutions.
