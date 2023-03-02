@@ -2,7 +2,9 @@ const { getAllBooks, getBookById, getBookByOrderId } = require('../../models/boo
 
 async function httpGetAllBooks(req, res) {
 
-    const validParams = []
+    const validParams = ['page', 'limit', 'order_id'];
+
+    const queryParams = object.keys()
     console.log('getting books...')
     const page = Number(req.query.page) || 1;
     const limit = Number(req.query.limit) || 20;
