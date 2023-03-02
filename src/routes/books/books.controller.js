@@ -41,7 +41,7 @@ async function httpGetBookById(req, res) {
     const id = req.params.id.split(':')[1];
     
     const book = await getBookById(id);
-    if (book) {
+    if (book.lengt) {
         return res.status(200).json(book);
     }
     return res.status(404).json('Gutenberg book id not found');
