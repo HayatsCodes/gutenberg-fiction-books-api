@@ -26,7 +26,7 @@ Due to pagination, this is the first 20 books, ordered by the order_id field.
 Returns the books in JSON format
 
 ##### Sample Response
-<div style="height: 100px; overflow-y: scroll;">
+<div style="height: 300px; overflow-y: scroll;">
   <pre>
   <code>
 [
