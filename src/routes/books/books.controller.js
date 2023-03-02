@@ -16,5 +16,5 @@ async function httpGetBookById(req, res) {
 
 module.exports = {
     httpGetAllBooks,
-    httpGetBook,
+    httpGetBookById,
 }
