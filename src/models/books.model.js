@@ -82,7 +82,7 @@ async function getAllBooks(skip, limit) {
     .find({}, {'_id': 0, '__v': 0})
     .sort({ order_id: 1})
     .skip(skip)
-    .limit(limit)
+    .limit(limit);
 }
 
 async function getBookById(id) {
