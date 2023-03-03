@@ -9,7 +9,7 @@ const server = http.createServer(app);
 // Wait for neccesary data before starting the server
 async function startServer() {
     await mongoConnect();
-    await loadBooks();
+    // await loadBooks();
 
     server.listen(5000, () => {
         console.log('Listening on port 5000');
