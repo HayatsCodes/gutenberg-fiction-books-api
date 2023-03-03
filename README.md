@@ -9,7 +9,7 @@ The API is written in JavaScript (NodeJS) and uses ExpressJS to resolve API rout
 
 ## Documentation
 ### Base URL
-https://gutenberg-fiction-books-api.cyclic.app  - Does not accept requests
+https://gutenberg-fiction-books.cyclic.app  - Does not accept requests
 
 ### Endpoints
 #### Endpoint 1
@@ -20,7 +20,7 @@ Due to pagination, this is the first 20 books, ordered by the order_id field.
 `GET /books`
 
 ##### Sample Request
-`GET https://gutenberg-fiction-books-api.cyclic.app/books`
+`GET https://gutenberg-fiction-books.cyclic.app/books`
 
 ##### Response
 Returns the books in JSON format
@@ -95,13 +95,13 @@ Note that 20 books would be returned in the response while 3 is shown here.
 `/books?page=pageNumber` where pageNumber is the desired page number to request.
 
 The page parameter defaults to 1 if not specified in the get request.
-For example `GET https://gutenberg-fiction-books-api.cyclic.app/books` returns the first page of the book collection since the page parameter wasn't specified.
+For example `GET https://gutenberg-fiction-books.cyclic.app/books` returns the first page of the book collection since the page parameter wasn't specified.
 
 ##### Request
 `GET /books?page=pageNumber`
 
 ##### Sample Request
-`GET https://gutenberg-fiction-books-api.cyclic.app/books?page=10`
+`GET https://gutenberg-fiction-books.cyclic.app/books?page=10`
 
 ##### Response
 Return the book in JSON format
@@ -168,13 +168,13 @@ Return the book in JSON format
 `/books?limit=limitNumber` where limitNumber is the desired book limit per request.
 
 The limit parameter defaults to 20 if not specified in the get request.
-For example `GET https://gutenberg-fiction-books-api.cyclic.app/books?page=2` returns 20 books in the second page of the book collection since the limit parameter wasn't specified.
+For example `GET https://gutenberg-fiction-books.cyclic.app/books?page=2` returns 20 books in the second page of the book collection since the limit parameter wasn't specified.
 
 ##### Request
 `GET /books?limit=limitNumber`
 
 ##### Sample Request
-`GET https://gutenberg-fiction-books-api.cyclic.app/books?limit=5`
+`GET https://gutenberg-fiction-books.cyclic.app/books?limit=5`
 
 ##### Response
 Return the book in JSON format
@@ -270,7 +270,7 @@ Return the book in JSON format
 ]
 ```
 The page and limit parameter can also be combined
-`https://gutenberg-fiction-books-api.cyclic.app/books?page=100&limit=5`
+`https://gutenberg-fiction-books.cyclic.app/books?page=100&limit=5`
 
 #### order_id parameter
 `/books?order_id=id`
@@ -280,7 +280,7 @@ Gets a particular book by the order_id field
 `GET /books?order_id=id`
 
 ##### Sample Request
-`GET https://gutenberg-fiction-books-api.cyclic.app/books?order_id=20000`
+`GET https://gutenberg-fiction-books.cyclic.app/books?order_id=20000`
 
 ##### Response
 Return the book in JSON format
@@ -315,7 +315,7 @@ Gets a particular book by the gutenberg_id field as assigned on the gutenberg's 
 `GET /books/:id`
 
 ##### Sample Request
-`GET https://gutenberg-fiction-books-api.cyclic.app/books/:1345`
+`GET https://gutenberg-fiction-books.cyclic.app/books/:1345`
 
 ##### Response
 Return the book in JSON format
