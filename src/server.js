@@ -6,7 +6,7 @@ const { loadBooks } = require('./models/books.model');
 
 const server = http.createServer(app);
 
-
+// Wait for neccesary data before starting the server
 async function startServer() {
     await mongoConnect();
     await loadBooks();
