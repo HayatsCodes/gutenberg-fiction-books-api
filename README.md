@@ -287,7 +287,6 @@ Return the book in JSON format
 
 ##### Sample Response
 ```
-[
     {
         "download_link": {
             "html": "http://www.gutenberg.org/ebooks/66581.html.noimages",
@@ -305,7 +304,6 @@ Return the book in JSON format
         "title": "Colville of the Guards, Volume 2 (of 3)",
         "year": "2021-10-20"
     }
-]
 ```
 
 
@@ -324,7 +322,6 @@ Return the book in JSON format
 
 ##### Sample Response
 ```
-[
     {
         "download_link": {
             "html": "http://www.gutenberg.org/ebooks/1345.html.noimages",
@@ -342,7 +339,6 @@ Return the book in JSON format
         "title": "The Vicar of Tours",
         "year": "2005-08-10"
     }
-]
 ```
 
 ## AUTHOR
