@@ -1,4 +1,4 @@
-const { getAllBooks, getBookById, getBookByOrderId } = require('../../ser/books.model');
+const { getAllBooks, getBookById, getBookByOrderId } = require('../../services/books.service');
 
 async function httpGetAllBooks(req, res) {
 
