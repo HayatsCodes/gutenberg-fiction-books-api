@@ -2,9 +2,8 @@
   "name": "gutenberg_stem_books-api",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "npm run src/server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
