@@ -165,7 +165,7 @@ Return the book in JSON format
 ```
 
 ##### Limit parameter
-`/books?page=limitNumber` where limitNumber is the desired book limit per request.
+`/books?limit=limitNumber` where limitNumber is the desired book limit per request.
 
 The limit parameter defaults to 20 if not specified in the get request.
 For example `GET https://gutenberg-fiction-books-api.cyclic.app/books?page=2` returns 20 books in the second page of the book collection since the limit parameter wasn't specified.
