@@ -87,11 +87,11 @@ Returns the books in JSON format
     </code>
   </pre>
 </div>
-Note 20 books would be returned in the response while 3 is shown here.
+Note that 20 books would be returned in the response while 3 is shown here.
 
 #### Endpoint 2
 `/books/:id`
-Gets a particular book by its id as assigned on the gutenberg's website
+Gets a particular book by the gutenberg_id field as assigned on the gutenberg's website
 
 ##### Request
 `GET /books/:id`
@@ -121,6 +121,43 @@ Return the book in JSON format
         "subjects": "French fiction -- Translations into English",
         "title": "The Vicar of Tours",
         "year": "2005-08-10"
+    }
+]
+```
+
+#### Query Parameters
+#### Parameter 1
+`/books?order_id=id`
+Gets a particular book by the order_id field
+
+##### Request
+`GET /books?order_id=id`
+
+##### Sample Request
+`GET https://gutenberg-fiction-books-api.cyclic.app/books?order_id=20000`
+
+##### Response
+Return the book in JSON format
+
+##### Sample Response
+```
+[
+    {
+        "download_link": {
+            "html": "http://www.gutenberg.org/ebooks/66581.html.noimages",
+            "html5": "http://www.gutenberg.org/ebooks/66581.html.images",
+            "txt": "http://www.gutenberg.org/ebooks/66581.txt.utf-8",
+            "epub": "http://www.gutenberg.org/ebooks/66581.epub.noimages",
+            "epub3": "http://www.gutenberg.org/ebooks/66581.epub3.images",
+            "kindle": "http://www.gutenberg.org/ebooks/66581.kf8.images"
+        },
+        "gutenberg_id": "66581",
+        "authors": "Grant, James, 1822-1887",
+        "book_url": "http://www.gutenberg.org/ebooks/66581",
+        "order_id": 20000,
+        "subjects": "Soldiers -- Fiction; British -- Afghanistan -- Fiction",
+        "title": "Colville of the Guards, Volume 2 (of 3)",
+        "year": "2021-10-20"
     }
 ]
 ```
