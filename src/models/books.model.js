@@ -78,7 +78,4 @@ async function saveBook(book) {
 
 module.exports = {
     loadBooks,
-    getAllBooks,
-    getBookById,
-    getBookByOrderId,
 }
