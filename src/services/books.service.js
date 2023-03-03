@@ -1,4 +1,4 @@
-const books = require('.//books.mongo');
+const books = require('../models/books.mongo');
 
 
 async function getAllBooks(skip, limit) {
