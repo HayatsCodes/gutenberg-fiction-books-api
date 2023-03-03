@@ -2,7 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const csv = require('csv-parse');
 const books = require('./books.mongo');
-const { count } = require('console');
 
 function isFiction(book) {
     const regex = /^(?!.*(religion|christianity|islam|quran|bible|judaism|buddhism|hinduism)).*fiction.*$/i;
