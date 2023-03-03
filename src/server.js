@@ -1,6 +1,6 @@
 const http = require('http');
 
-const app = require('./src/app');
+const app = require('./app');
 const mongoConnect = require('./src/utils/mongo');
 const { loadBooks } = require('./src/models/books.model');
 
