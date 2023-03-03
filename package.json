@@ -2,8 +2,9 @@
   "name": "gutenberg_stem_books-api",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
+    "start": "node src/server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/HayatsCodes/Gutenberg_STEM_Books-API#readme",
   "dependencies": {
     "csv-parse": "^5.3.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^7.0.0",
     "morgan": "^1.10.0"

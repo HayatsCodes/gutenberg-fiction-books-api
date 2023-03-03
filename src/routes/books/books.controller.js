@@ -1,4 +1,4 @@
-const { getAllBooks, getBookById, getBookByOrderId } = require('../../models/books.model');
+const { getAllBooks, getBookById, getBookByOrderId } = require('../../services/books.service');
 
 async function httpGetAllBooks(req, res) {
 
@@ -41,7 +41,7 @@ async function httpGetBookById(req, res) {
     const id = req.params.id.split(':')[1];
     
     const book = await getBookById(id);
-    if (book.length > 0) {
+    if (book) {
         return res.status(200).json(book);
     }
     return res.status(404).json('Gutenberg book id not found');
