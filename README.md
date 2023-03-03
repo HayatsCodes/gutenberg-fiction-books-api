@@ -91,7 +91,7 @@ Note that 20 books would be returned in the response while 3 is shown here.
 
 ##### Query Parameters
 
-##### page parameter
+##### Page parameter
 `/books?page=pageNumber` where pageNumber is the desired page number to request.
 
 The page parameter defaults to 1 if not specified in the get request.
@@ -164,7 +164,7 @@ Return the book in JSON format
  ]
 ```
 
-##### limit parameter
+##### Limit parameter
 `/books?page=limitNumber` where limitNumber is the desired book limit per request.
 
 The limit parameter defaults to 20 if not specified in the get request.
